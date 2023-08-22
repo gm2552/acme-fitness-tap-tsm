@@ -35,7 +35,7 @@ metadata:
     sso.apps.tanzu.vmware.com/allow-unsafe-issuer-uri: ""
 spec:
   tls:
-    disabled: true
+    deactivated: true
   tokenSignature:
     signAndVerifyKeyRef:
       name: #@ 'appsso-acme-fitness' +"-signing-key"
