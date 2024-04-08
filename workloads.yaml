@@ -10,6 +10,10 @@ metadata:
     apps.tanzu.vmware.com/workload-type: server
     app.kubernetes.io/part-of: acme-fitness-store
 spec:
+  build:
+    env:
+      - name: BP_CPYTHON_VERSION
+        value: "3.8.*"
   env:
   - name: CART_PORT
     value: "8080"
